@@ -4,12 +4,12 @@
 # - Write the code for 1 of the 3 use cases.
 
 
-# num1 = int(input("Enter first number: "))
-# num2 = int(input("Enter second number"))
-# print(f"{num1} == {num2} : {num1 == num2}")     # The output might be true or false depending on the values the user input(== equal to) num 1 must be equal in value to num2.
-# print(f"{num1} != {num2} : {num1 != num2}")  # True if the num1 is not equal to num2 in value
-# print(f"{num1} > {num2} : {num1 > num2}")  # it can either be true or false (the num1 must be bigger in value than num2 =true, num1 smaller in value than num2 = False)
-# print(f"{num1} < {num2} : {num1 < num2}") # ti can either be true or false (the num1 must be smaller in value than num2 =true, num1 bigger in value than num2 = False)
+ num1 = int(input("Enter first number: "))
+ num2 = int(input("Enter second number"))
+print(f"{num1} == {num2} : {num1 == num2}")     # The output might be true or false depending on the values the user input(== equal to) num 1 must be equal in value to num2.
+print(f"{num1} != {num2} : {num1 != num2}")  # True if the num1 is not equal to num2 in value
+print(f"{num1} > {num2} : {num1 > num2}")  # it can either be true or false (the num1 must be bigger in value than num2 =true, num1 smaller in value than num2 = False)
+print(f"{num1} < {num2} : {num1 < num2}") # ti can either be true or false (the num1 must be smaller in value than num2 =true, num1 bigger in value than num2 = False)
 
 
 #use case
@@ -19,16 +19,16 @@
 
 
 #Use case - (MONTHLY COMMMODITY PRICE CHECKER)
-# June_cost_of_goods =  int(input(" What is the cost of indomie last month?"))
-# July_cost_0f_goods = int(input("what is the current cost of indomie?"))
+ June_cost_of_goods =  int(input(" What is the cost of indomie last month?"))
+ July_cost_0f_goods = int(input("what is the current cost of indomie?"))
 
-# print(f"{June_cost_of_goods} >= {July_cost_0f_goods}:{July_cost_0f_goods >= June_cost_of_goods}")
-# print(f"{June_cost_of_goods}== {July_cost_0f_goods}:{June_cost_of_goods == July_cost_0f_goods}")
-# print(f"{June_cost_of_goods}=! {July_cost_0f_goods}:{June_cost_of_goods != July_cost_0f_goods}")
-# print(f"{June_cost_of_goods}<= {July_cost_0f_goods}:{June_cost_of_goods <= July_cost_0f_goods}")
+print(f"{June_cost_of_goods} >= {July_cost_0f_goods}:{July_cost_0f_goods >= June_cost_of_goods}")
+print(f"{June_cost_of_goods}== {July_cost_0f_goods}:{June_cost_of_goods == July_cost_0f_goods}")
+print(f"{June_cost_of_goods}=! {July_cost_0f_goods}:{June_cost_of_goods != July_cost_0f_goods}")
+print(f"{June_cost_of_goods}<= {July_cost_0f_goods}:{June_cost_of_goods <= July_cost_0f_goods}")
 
-# July_cost_0f_goods -= June_cost_of_goods
-# print("Cost difference:", July_cost_0f_goods)
+July_cost_0f_goods -= June_cost_of_goods
+print("Cost difference:", July_cost_0f_goods)
 
 
 #**Task2**
@@ -54,13 +54,13 @@
 """ This program will help to screen out all applicants that do not meet up the given conditions and pick only the candidiates that are eligible"""
 
 
-# citizenship = input("Are you a Nigerian: ").strip.lower()
-# Enrollment = input(" are you an undergraduate student: ").strip.lower()
-# Scholarship= input( "are currently enjoying any other scholarship?").strip.lower()
-# Academic_records = int(input("Enter your score in English: "))
-# Academic_records2 = int(input("Enter your score in Maths: "))
-# eligibility = (citizenship == "yes") and (Enrollment == "yes") and (Scholarship == "no") and (Academic_records > 70) and (Academic_records2 > 60)
-# print(f"You are qualified, {eligibility}")
+citizenship = input("Are you a Nigerian: ").strip.lower()
+Enrollment = input(" are you an undergraduate student: ").strip.lower()
+Scholarship= input( "are currently enjoying any other scholarship?").strip.lower()
+Academic_records = int(input("Enter your score in English: "))
+Academic_records2 = int(input("Enter your score in Maths: "))
+eligibility = (citizenship == "yes") and (Enrollment == "yes") and (Scholarship == "no") and (Academic_records > 70) and (Academic_records2 > 60)
+ print(f"You are qualified, {eligibility}")
 
 
 
@@ -73,17 +73,17 @@
 # Items: ['Book', 'Pen', 'Bag']
 # Total Price: ₦600
 
-# List_items = ["pen", "book", "bag", "textbook", "sharpner", "eraser"]
-# List_prices = [50, 100, 3000, 1500, 100,  40 ]
-# Cart_total =0
-# pen=50
-# book=100
-# bag =3000
-# textbook =1500
-# sharpner =100
-# eraser =40
-# Cart_total += book +pen + textbook
-# print(f"Items: ['book','pen', 'textbook'] \n Total price: {Cart_total}")
+List_items = ["pen", "book", "bag", "textbook", "sharpner", "eraser"]
+List_prices = [50, 100, 3000, 1500, 100,  40 ]
+Cart_total =0
+pen=50
+book=100
+bag =3000
+textbook =1500
+sharpner =100
+eraser =40
+Cart_total += book +pen + textbook
+print(f"Items: ['book','pen', 'textbook'] \n Total price: {Cart_total}")
 
 
 # task4: Student Record**
@@ -128,4 +128,5 @@ store ={"book": 10, "pen":20, "bag": 50, "pencil":40}
 customer_purchase = input("Enter an item you want to buy")
 Purchased_quantity =int(input("Enter the quuanity you want"))
 Updated_quantity =  (store  -= Purchased_quantity)
+
 print(Updated_quantity)
