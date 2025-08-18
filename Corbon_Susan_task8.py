@@ -45,18 +45,18 @@ print("Cost difference:", July_cost_0f_goods)
 #   - Academic Qualification:
 #     - For undergraduate courses, applicants usually need five distinctions (As and Bs) in relevant subjects in their WAEC/WASSCE (May/June) exams, including English and Mathematics.
 
-# name= input("Emter your name :")        #collect user's name
-# age= int(input("Enter your age :"))     # collects user's age
-# Score = int(input("emter your test score:"))  #collects user'sscore
-# eligibility = (age < 18) and (Score >70)    # check for elligibilty using the "And" operator
-# print(f"Candidiate: {name}\nAge: {age}\nScore: {Score}\nEligible: {eligibility}")  # Prints outs the users details and eligibility status
+name= input("Emter your name :")        #collect user's name
+age= int(input("Enter your age :"))     # collects user's age
+Score = int(input("emter your test score:"))  #collects user'sscore
+eligibility = (age < 18) and (Score >70)    # check for elligibilty using the "And" operator
+print(f"Candidiate: {name}\nAge: {age}\nScore: {Score}\nEligible: {eligibility}")  # Prints outs the users details and eligibility status
 
 """ This program will help to screen out all applicants that do not meet up the given conditions and pick only the candidiates that are eligible"""
 
 
-citizenship = input("Are you a Nigerian: ").strip.lower()
-Enrollment = input(" are you an undergraduate student: ").strip.lower()
-Scholarship= input( "are currently enjoying any other scholarship?").strip.lower()
+citizenship = input("Are you a Nigerian: ").lower()
+Enrollment = input(" are you an undergraduate student: ").lower()
+Scholarship= input( "are currently enjoying any other scholarship?").lower()
 Academic_records = int(input("Enter your score in English: "))
 Academic_records2 = int(input("Enter your score in Maths: "))
 eligibility = (citizenship == "yes") and (Enrollment == "yes") and (Scholarship == "no") and (Academic_records > 70) and (Academic_records2 > 60)
@@ -127,6 +127,7 @@ print(f"Student Record: \n name:{User_name}\n Age:{User_age}\n Scores: {scores}\
 store ={"book": 10, "pen":20, "bag": 50, "pencil":40}
 customer_purchase = input("Enter an item you want to buy")
 Purchased_quantity =int(input("Enter the quuanity you want"))
-Updated_quantity =  (store  -= Purchased_quantity)
+Updated_quantity = store -= Purchased_quantity
 
 print(Updated_quantity)
+
