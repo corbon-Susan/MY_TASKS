@@ -56,18 +56,6 @@ while True:
 print(voters)
 
 
-# voters_List = []
-# voters_name1 = input("Enter your name").title()
-# voters_name2 = input("Enter your name").title()
-# voters_name3 = input("Enter your name").title()
-# voters_name4 = input("Enter your name").title()
-# names= voters_name1, voters_name2, voters_name3, voters_name4
-# if names not in voters_List:
-#     voters_List.append(names)
-#     print(set(voters_List))
-# else:
-#     print(" User name already exist")
-
 
 # 12. Simulated USSD Menu Interaction
 #  - You are to design a mock USSD interface for a mobile service.
