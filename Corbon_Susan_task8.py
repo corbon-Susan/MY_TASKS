@@ -4,8 +4,8 @@
 # - Write the code for 1 of the 3 use cases.
 
 
- num1 = int(input("Enter first number: "))
- num2 = int(input("Enter second number"))
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number"))
 print(f"{num1} == {num2} : {num1 == num2}")     # The output might be true or false depending on the values the user input(== equal to) num 1 must be equal in value to num2.
 print(f"{num1} != {num2} : {num1 != num2}")  # True if the num1 is not equal to num2 in value
 print(f"{num1} > {num2} : {num1 > num2}")  # it can either be true or false (the num1 must be bigger in value than num2 =true, num1 smaller in value than num2 = False)
@@ -19,8 +19,8 @@ print(f"{num1} < {num2} : {num1 < num2}") # ti can either be true or false (the 
 
 
 #Use case - (MONTHLY COMMMODITY PRICE CHECKER)
- June_cost_of_goods =  int(input(" What is the cost of indomie last month?"))
- July_cost_0f_goods = int(input("what is the current cost of indomie?"))
+June_cost_of_goods =  int(input(" What is the cost of indomie last month?"))
+July_cost_0f_goods = int(input("what is the current cost of indomie?"))
 
 print(f"{June_cost_of_goods} >= {July_cost_0f_goods}:{July_cost_0f_goods >= June_cost_of_goods}")
 print(f"{June_cost_of_goods}== {July_cost_0f_goods}:{June_cost_of_goods == July_cost_0f_goods}")
@@ -60,7 +60,7 @@ Scholarship= input( "are currently enjoying any other scholarship?").lower()
 Academic_records = int(input("Enter your score in English: "))
 Academic_records2 = int(input("Enter your score in Maths: "))
 eligibility = (citizenship == "yes") and (Enrollment == "yes") and (Scholarship == "no") and (Academic_records > 70) and (Academic_records2 > 60)
- print(f"You are qualified, {eligibility}")
+print(f"You are qualified, {eligibility}")
 
 
 
@@ -124,10 +124,13 @@ print(f"Student Record: \n name:{User_name}\n Age:{User_age}\n Scores: {scores}\
 # - Print the updated dictionary in this format:
 # Before purchase: {'Book': 10, 'Pen': 20, 'Bag': 5}
 # After purchase: {'Book': 10, 'Pen': 18, 'Bag': 5}
+
 store ={"book": 10, "pen":20, "bag": 50, "pencil":40}
+print(store)
 customer_purchase = input("Enter an item you want to buy")
 Purchased_quantity =int(input("Enter the quuanity you want"))
-Updated_quantity = store -= Purchased_quantity
+
+Updated_quantity = store - Purchased_quantity
 
 print(Updated_quantity)
 

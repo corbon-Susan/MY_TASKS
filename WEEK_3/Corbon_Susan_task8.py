@@ -5,7 +5,7 @@
 
 
 num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number"))
+num2 = int(input("Enter second number: "))
 print(f"{num1} == {num2} : {num1 == num2}")     # The output might be true or false depending on the values the user input(== equal to) num 1 must be equal in value to num2.
 print(f"{num1} != {num2} : {num1 != num2}")  # True if the num1 is not equal to num2 in value
 print(f"{num1} > {num2} : {num1 > num2}")  # it can either be true or false (the num1 must be bigger in value than num2 =true, num1 smaller in value than num2 = False)
@@ -131,7 +131,8 @@ store ={
 customer_purchased =input(f"available item are {store}\n Enter the item you want to buy").lower()
 purchased_quantity = int(input("Enter the quantity you want"))
 print(f"before purchase:{store} ")
-store[customer_purchased] -= purchased_quantity
+for key, values in
+store[customer_purchased] - purchased_quantity
 print(f"after purchased : {store}")
 
 
@@ -160,4 +161,4 @@ Sitting =int(input("Enter the number of sitting for your WAEC result"))
 Post_utme =int(input("Enter post UTME score"))
 legible_for_admission =(utme_score >= 200) and (choice == "Yes") and (O_level == "Yes") and (Sitting == 1) and (Post_utme >= 200) and (Post_utme <=320)
 print("Eligble for admission :",legible_for_admission)
--
+
