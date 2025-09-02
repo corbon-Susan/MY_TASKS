@@ -56,5 +56,7 @@ while True:
 
 
 from pathlib import Path
-file_path = Workspace ("to do list")
-file = wokspace / 'To_do_list.txt'
+workspace =Path ("to do list")
+workspace.mkdir(exist_ok =True)
+file_path = workspace/"To_do_list.txt"
+file_path
